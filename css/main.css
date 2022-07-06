@@ -343,7 +343,9 @@ img {
 #about-c .about-logos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2rem; }
+  grid-gap: 2rem;
+  justify-items: center;
+  align-items: center; }
   #about-c .about-logos img {
     width: 70%; }
 
@@ -366,11 +368,34 @@ img {
     border-radius: 50%;
     margin-right: 0.5rem; }
 
+#contact-a form {
+  width: 600px;
+  margin: auto; }
+
 #contact-a .text-fields {
   display: grid;
   grid-template-areas: 'name email' 'subject phone' 'message message';
   grid-gap: 1.2rem;
-  margin-bottom: 1.2rem; }
+  margin-bottom: 1.2rem;
+  text-align: center; }
+  #contact-a .text-fields .fas {
+    position: absolute;
+    padding: 10px;
+    color: #333; }
+  #contact-a .text-fields input {
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    border: 1px solid #333; }
+  #contact-a .text-fields input:focus {
+    background-color: #f3f3f3;
+    outline: none; }
+  #contact-a .text-fields textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    border: 1px solid #333; }
+  #contact-a .text-fields textarea:focus {
+    background-color: #f3f3f3;
+    outline: none; }
   #contact-a .text-fields .name-input {
     grid-area: name; }
   #contact-a .text-fields .subject-input {
