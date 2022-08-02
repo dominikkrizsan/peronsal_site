@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- dsc keywords -->
+    <meta name="description" content="Personal Web Dev website" />
+    <meta name="keywords" content="web development, web design, frontend" />
+    <!-- font awasome -->
     <script
       src="https://kit.fontawesome.com/6febbd9845.js"
       crossorigin="anonymous"
@@ -14,12 +19,16 @@
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap"
       rel="stylesheet"
     />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- css file favicon title -->
     <link rel="stylesheet" href="css/main.css" />
     <title>My Work | Web Dev</title>
   </head>
   <body>
     <!-- Header -->
-    <header id="header-inner">
+    <header id="header-inner" data-aos="fade-down" data-aos-duration="1500">
       <div class="container">
         <nav id="main-nav">
           <h2 class="logo">DKN</h2>
@@ -36,11 +45,27 @@
     <!-- Seciton A: Gallery -->
     <seciton id="work-a" class="text-center py-3">
       <div class="container">
-        <h2 class="section-title">My Work</h2>
-        <div class="bottom-line"></div>
-        <p class="lead">Check out some of my projects</p>
+        <h2
+          class="section-title"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
+          My Work
+        </h2>
+        <div
+          class="bottom-line"
+          data-aos="fade-left"
+          data-aos-duration="2000"
+        ></div>
+        <p class="lead" data-aos="fade-up" data-aos-duration="2000">
+          Check out some of my projects
+        </p>
         <div class="items">
-          <a href="https://github.com/kalmanpal/library" target="_blank"
+          <a
+            href="https://github.com/kalmanpal/library"
+            target="_blank"
+            data-aos="fade-right"
+            data-aos-duration="2000"
             ><div class="item">
               <div class="item-image">
                 <img src="img/items/item1.png" alt="Library" />
@@ -56,6 +81,8 @@
           <a
             href="https://github.com/dominikkrizsan/ultimate_adventure_javascript"
             target="_blank"
+            data-aos="zoom-in"
+            data-aos-duration="2000"
             ><div class="item">
               <div class="item-image">
                 <img src="img/items/item2.png" alt="Adventure Game" />
@@ -70,7 +97,11 @@
               </div>
             </div>
           </a>
-          <a href="https://github.com/dominikkrizsan/jdmcars" target="_blank"
+          <a
+            href="https://github.com/dominikkrizsan/jdmcars"
+            target="_blank"
+            data-aos="fade-left"
+            data-aos-duration="2000"
             ><div class="item">
               <div class="item-image">
                 <img src="img/items/item3.png" alt="JDM Cars Static" />
@@ -83,7 +114,11 @@
               </div>
             </div>
           </a>
-          <a href="http://dominikkrizsn.great-site.net/" target="_blank"
+          <a
+            href="http://dominikkrizsn.great-site.net/"
+            target="_blank"
+            data-aos="fade-right"
+            data-aos-duration="2000"
             ><div class="item">
               <div class="item-image">
                 <img src="img/items/item4.png" alt="Template Website" />
@@ -175,5 +210,6 @@
       </div>
     </footer>
     <script src="js/typewriter.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- dsc keywords -->
+    <meta name="description" content="Personal Web Dev website" />
+    <meta name="keywords" content="web development, web design, frontend" />
+    <!-- font awasome -->
     <script
       src="https://kit.fontawesome.com/6febbd9845.js"
       crossorigin="anonymous"
@@ -14,6 +19,10 @@
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap"
       rel="stylesheet"
     />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- css file favicon title -->
     <link rel="stylesheet" href="css/main.css" />
     <link rel="shortcut icon" type="favicon" href="img/favicon.ico" />
     <title>Dominik Krizsán | Web Dev</title>
@@ -22,7 +31,7 @@
     <!-- Header -->
     <header id="header-home">
       <div class="container">
-        <nav id="main-nav">
+        <nav id="main-nav" data-aos="fade-down" data-aos-duration="1300">
           <h2 class="logo">DKN</h2>
           <ul>
             <li><a href="index.html" class="current">Home</a></li>
@@ -32,7 +41,7 @@
           </ul>
         </nav>
         <div class="header-content">
-          <h1>
+          <h1 data-aos="zoom-in" data-aos-duration="2000">
             I Am Dominik The
             <span
               class="txt-type"
@@ -40,16 +49,27 @@
               data-words='["Web Developer", "Software Engineer", "IT Operator"]'
             ></span>
           </h1>
-          <p class="lead">
+          <p class="lead" data-aos="fade-right" data-aos-duration="2000">
             I specialize in Fontend Development, Software Engineering
           </p>
-          <a href="work.html" class="btn-light">View My Work</a>
+          <a
+            data-aos="flip-up"
+            data-aos-duration="2000"
+            href="work.html"
+            class="btn-light"
+            >View My Work</a
+          >
         </div>
       </div>
     </header>
 
     <!-- Section A: Specialize -->
-    <section id="home-a" class="text-center py-1">
+    <section
+      id="home-a"
+      class="text-center py-1"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
       <div class="container">
         <h2 class="section-title">I Specialize In</h2>
         <div class="bottom-line"></div>
@@ -62,7 +82,12 @@
     </section>
 
     <!-- Seciton B: Stats -->
-    <seciton id="home-b" class="text-center py-2">
+    <section
+      id="home-b"
+      class="text-center py-2"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
       <div class="bg-dark py-4">
         <div class="stats">
           <div>
@@ -95,10 +120,15 @@
           </div>
         </div>
       </div>
-    </seciton>
+    </section>
 
     <!-- Section C: Process -->
-    <section id="home-c" class="text-center py-2">
+    <section
+      id="home-c"
+      class="text-center py-2"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
       <div class="container">
         <h2 class="section-title">The Creating Process</h2>
         <div class="bottom-line"></div>
@@ -156,6 +186,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
     <script src="js/typewriter.js"></script>
   </body>
 </html>

@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- dsc keywords -->
+    <meta name="description" content="Personal Web Dev website" />
+    <meta name="keywords" content="web development, web design, frontend" />
+    <!-- font awasome -->
     <script
       src="https://kit.fontawesome.com/6febbd9845.js"
       crossorigin="anonymous"
@@ -14,12 +19,16 @@
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap"
       rel="stylesheet"
     />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- css file favicon title -->
     <link rel="stylesheet" href="css/main.css" />
     <title>Contact Me | Web Dev</title>
   </head>
   <body>
     <!-- Header -->
-    <header id="header-inner">
+    <header id="header-inner" data-aos="fade-down" data-aos-duration="1300">
       <div class="container">
         <nav id="main-nav">
           <h2 class="logo">DKN</h2>
@@ -36,11 +45,19 @@
     <!-- Section A: Contact Form -->
     <section id="contact-a" class="text-center py-3">
       <div class="container">
-        <h2 class="section-title">Contact Me</h2>
-        <div class="bottom-line"></div>
-        <p class="lead">Here is how you can reach me</p>
+        <h2 class="section-title" data-aos="fade-left" data-aos-duration="2000">
+          Contact Me
+        </h2>
+        <div
+          class="bottom-line"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        ></div>
+        <p class="lead" data-aos="fade-up" data-aos-duration="2000">
+          Here is how you can reach me
+        </p>
         <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
-          <div class="text-fields">
+          <div class="text-fields" data-aos="fade-up" data-aos-duration="2000">
             <input
               type="text"
               class="text-input name-input"
@@ -60,7 +77,7 @@
               name="email"
             />
             <input
-              type="text"
+              type="number"
               class="text-input phone-input"
               placeholder="Phone Number"
               name="phone"
@@ -74,7 +91,14 @@
               <div data-netlify-recaptcha="true"></div>
             </div>
           </div>
-          <button type="submit" class="btn-dark">Submit</button>
+          <button
+            type="submit"
+            class="btn-dark"
+            data-aos="zoom-in"
+            data-aos-duration="2000"
+          >
+            Submit
+          </button>
         </form>
       </div>
     </section>
@@ -83,17 +107,17 @@
     <section id="contact-b" class="py-3 bg-dark">
       <div class="container">
         <div class="contact-info">
-          <div>
+          <div data-aos="fade-right" data-aos-duration="2000">
             <i class="fas fa-envelope fa-2x"></i>
             <h3>Email</h3>
             <p>dominik.krizsn@gmail.com</p>
           </div>
-          <div>
+          <div data-aos="zoom-in" data-aos-duration="2000">
             <i class="fas fa-phone fa-2x"></i>
             <h3>Phone</h3>
             <p>+36 (30) 241 6809</p>
           </div>
-          <div>
+          <div data-aos="fade-left" data-aos-duration="2000">
             <i class="fas fa-address-card fa-2x"></i>
             <h3>Address</h3>
             <p>9700 Szombathely, Szövő utca 54.</p>
@@ -104,8 +128,12 @@
 
     <!-- Section C: Tagline -->
     <section id="contact-c" class="bg-main py-4">
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-duration="2000">
         <h1>Let's Start Your Next Project</h1>
+        <h2>
+          The Project was inspired <br />
+          by Brad Traversy
+        </h2>
       </div>
     </section>
 
@@ -128,6 +156,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
     <script src="js/typewriter.js"></script>
   </body>
 </html>
